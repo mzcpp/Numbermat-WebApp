@@ -1,0 +1,345 @@
+/*
+* All images.
+*/
+
+.logoImage {
+  position: relative;
+  top: 10px;
+  left: 1px;
+}
+
+.difficultyImage {
+  position: relative;
+  top: 20px;
+}
+
+.typeImage {
+  position: relative;
+  top: 100px;
+}
+
+.verticalLine {
+  position: relative;
+  top: -70px;
+  left: 296px;
+}
+
+.horizontalLine {
+  position: relative;
+  top: -500px;
+  left: 315px;
+}
+
+.smallHorizontalLine {
+  position: relative;
+  left: 43px;
+  top: -105px;
+}
+
+.correctImage {
+  position: relative;
+  top: -605px;
+  left: 805px;
+  opacity: 0;
+}
+
+.wrongImage {
+  position: relative;
+  top: -662px;
+  left: 805px;
+  opacity: 0;
+}
+
+.flags {
+  position: relative;
+  top: -1390px;
+  left: -65px;
+  width: 50px;
+  height: 113px;
+  background-color: rgb(214, 217, 223);
+  border-radius: 5px 0 0 5px;
+}
+
+.flags a {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 7px;
+  margin-top: 3px;
+}
+
+/*
+* Radio buttons.
+*/
+
+.radio {
+  position: relative;
+  top: -760px;
+  width: 280px;
+  left: -1px;
+}
+
+/*
+* Type of exercise drop down list.
+*/
+
+.typeDropDown {
+  position: relative;
+  width:260px;
+  height:35px;
+  top: -710px;
+  left: 10px;
+}
+
+/*
+* All buttons.
+*/
+
+.generateRandomButton {
+  position: relative;
+  width: 115px;
+  height: 65px;
+  top: -720px;
+}
+
+.setParametersButton {
+  position: relative;
+  width: 155px;
+  height: 65px;
+  top: -720px;
+  left: 5px;
+}
+
+
+.generateWithParametersButton {
+  position: relative;
+  height:82px;
+  width:147px;
+  top: -399px;
+  left: -405px;
+}
+
+.helpButton {
+  position: relative;
+  height: 38px;
+  width: 126px;
+  top: -421px;
+  left: -279px;
+}
+
+.restartButton {
+  position: relative;
+  height: 38px;
+  width: 126px;
+  top: -377px;
+  left: -410px;
+}
+
+.showSolutionLatexButton {
+  position: relative;
+  width:295px;
+  top: -775px;
+  left: 316px;
+}
+
+.showSolutionTextButton {
+  position: relative;
+  width:295px;
+  top: -775px;
+  left: 320px;
+}
+
+.copySolutionButton {
+  position: relative;
+  top: -437px;
+  left: -282px;
+  width: 295px;
+}
+
+.exportPDFButton {
+  position: relative;
+  top: -475px;
+  left: 620px;
+  width: 295px;
+}
+
+.gitHolder {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  opacity: 0.7;
+}
+
+.languageDiv {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  opacity: 0.8;
+}
+
+.checkSolutionButton {
+  height: 42px;
+  width: 159px;
+}
+
+/*
+* Field for answer
+*/
+
+.checkSolutionField {
+  margin-bottom: 0.5em;
+  font-size: 13px;
+  height: 50px;
+  width: 160px;
+}
+
+/*
+* Check button and field for answer div
+*/
+
+.checkSolutionButtonField {
+  position: relative;
+  top: -1110px;
+  left: 755px;
+}
+
+/*
+* User parameter fields
+*/
+
+.parameterFields {
+  position: relative;
+  top: -898px;
+}
+
+/*
+* Labels of field parameters section
+*/
+
+.form-control {
+  display: inline-block;
+}
+
+.block label font {
+  opacity: 0.3;
+}
+
+.block input {
+  font-size: 14px;
+  margin-left: 0.5em;
+  width: 140pt;
+  height: 40px;
+}
+
+#parameterField1 {
+  margin-left: 0.6em;
+  width: 140.5pt;
+}
+
+/*
+* Output windows.
+*/
+
+.assignmentWindow {
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  display: table-cell;
+  vertical-align: middle;
+  top: -1416px;
+  left: 315px;
+  padding-left: 5px;
+  height: 210px !important;
+  min-height: 210px !important;
+  width: 430px !important;
+  min-width: 430px !important;
+  max-height: 210px !important;
+  max-width: 430px !important;
+  border: 1px solid #ccc;
+  font: 16px/26px Georgia, Garamond, Serif;
+  overflow: auto;
+}
+
+.solutionWindow {
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  top: -1335px;
+  left: 315px;
+  padding-left: 5px;
+  height: 280px !important;
+  width: 600px !important;
+  border: 1px solid #ccc;
+  font:16px/26px Georgia, Garamond, Serif;
+  overflow: auto;
+}
+
+.tutorialWindow {
+  top: 52px;
+  padding-left: 5px;
+  margin-right: 2em;
+  margin-left: 2em;
+  border: 0px solid #ccc;
+  font: 16.5px/26.5px Georgia, Garamond, Serif;
+  overflow: auto;
+}
+
+.temporaryWindow {
+  position: fixed;
+  margin-left: 10000px
+}
+
+.assignmentWindow p {
+  white-space: pre-line;
+  font-size: 145%;
+  margin-left: 5px;
+  cursor: default;
+}
+
+.solutionWindow p {
+  white-space: pre-line;
+  font-size:120%;
+  cursor: default;
+}
+
+.temporaryWindow p {
+  white-space: pre-line;
+  font-size:120%;
+  cursor: default;
+  top: 15000px;
+}
+
+/**
+* Pointer cursor while pointing at navBar in the Help modal.
+*/
+#navbarSupportedContent {
+  cursor: pointer;
+}
+
+/*
+* When an error occures, this changes the placeholder text color to white
+* so the user can see better.
+*/
+
+input.placeholderwhite::-webkit-input-placeholder {
+  color: white;
+}
+
+input.placeholderwhite:-moz-placeholder {
+  color: white;
+}
+
+input.placeholderwhite::-moz-placeholder {
+  color: white;
+}
+
+input.placeholderwhite::-ms-input-placeholder {
+  color: white;
+}
+
+input.placeholderwhite:-ms-input-placeholder {
+  color: white;
+}
+
+input.placeholderwhite::placeholder {
+  color: white;
+}

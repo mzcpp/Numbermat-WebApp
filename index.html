@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <title>Numbermat: Generátor príkladov</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://peterolson.github.io/BigInteger.js/BigInteger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.js" integrity="sha384-5zUJgoXUAOXAoLeyJm2Ja3vbN3VCnoc2w0rG7dyC2jjGwD8PINuWoDHJ3gNdkOxj" crossorigin="anonymous"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="js/languages/sk.js"></script>
+    <script src="js/languages/cz.js"></script>
+    <script src="js/languages/en.js"></script>
+    <script src="js/algorithms/Utils.js"></script>
+    <script src="js/algorithms/UIUtils.js"></script>
+    <script> var LANGUAGE = getLanguage(); </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.css" integrity="sha384-+MsSfd29vjUzcyqYURxcmpWGtqoSHBy+QdEJNLEslXQftxojQv0k6BGDqUNp9GtA" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/resetstylesheet.css">
+    <link rel="stylesheet" href="css/canvasstyle.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+  </head>
+
+  <body class="canvas">
+    <div class="jumbotron vertical-center">
+      <div class="container">
+
+        <!-- Images -->
+        <div>
+          <div class="logoImage" id="logoImage"><img src="images/logoSK.png"></div>
+          <div class="difficultyImage" id="diffImage"><img src="images/difficultySK.png"></div>
+          <div class="typeImage" id="typeImage"><img src="images/typeSK.png"></div>
+          <div class="verticalLine"><img src="images/line1.png"></div>
+          <div class="horizontalLine"><img src="images/line2.png"></div>
+          <div class="correctImage" id="correctSolution"><img src="images/correct.png"></div>
+          <div class="wrongImage" id="wrongSolution"><img src="images/wrong.png"></div>
+        </div>
+
+        <!-- Radio buttons -->
+        <div id="radio" class="radio btn-group btn-group-toggle" data-toggle="buttons">
+          <button id="radio1" class="btn btn-success" value="Ľahká">
+            <input id="option1" type="radio" onchange="changeTick('radio', 'option', 'dynamic')" value="Ľahká">
+            <div id="dynamic1">Ľahká</div>
+          </button>
+          <button id="radio2" class="btn btn-primary active" value="Stredná">
+            <input id="option2" type="radio" onchange="changeTick('radio', 'option', 'dynamic')" value="Stredná" checked>
+            <div id="dynamic2"><i class="fa fa-check fa-lg"></i>&nbsp;&nbsp;Stredná</div>
+          </button>
+          <button id="radio3" class="btn btn-secondary" value="Ťažká">
+            <input id="option3" type="radio" onchange="changeTick('radio', 'option', 'dynamic')" value="Ťažká">
+            <div id="dynamic3">Ťažká</div>
+          </button>
+        </div>
+
+        <!-- Exercise drop down list -->
+        <div class="typeDropDown form-group">
+          <select class="form-control" id="dropDownId" onchange="cleanBothSides()">
+            <option value=0>Najväčší spoločný deliteľ</option>
+            <option value=1>Bezoutova rovnosť</option>
+            <option value=2>Inverzia modulo n</option>
+            <option value=3>Eulerova funkcia φ</option>
+            <option value=4>Lineárna kongruencia</option>
+            <option value=5>Sústava lineárnych kongruencií</option>
+            <option value=6>Rád prvku grupy jednotiek</option>
+            <option value=7>Modulárne umocňovanie</option>
+            <option value=8>Legendreov symbol</option>
+            <option value=9>Kvadratická kongruencia (binomická)</option>
+            <option value=10>Kvadratická kongruencia (obecná)</option>
+            <option value=11>Binomická kongruencia</option>
+            <option value=12>Rád permutácie</option>
+          </select>
+        </div>
+
+        <!-- All the buttons in the container -->
+        <button class="generateRandomButton btn btn-labeled btn-success" id="generateRandomButton" type="button" onclick="generate(true)">Generovať</br>náhodne</button>
+        <button class="setParametersButton btn btn-labeled btn-primary" id="setParametersButton" type="button" onclick="activateLeftSide()">Nastaviť</br>parametre</button>
+
+        <button class="helpButton btn btn-labeled btn-info" id="helpButton" data-toggle="modal" data-target="#helpModal">
+          <span class="btn-label" id="helpLabel">
+            <i class="fa fa-question fa-lg" style="font-size: 1.45rem;"></i>&nbsp;&nbsp;&nbsp;Nápoveda
+          </span>
+        </button>
+
+        <button class="restartButton btn btn-labeled btn-info" id="restartButton" type="button" onclick="location.reload();">
+          <span class="btn-label" id="restartLabel">
+            <i class="fa fa-refresh fa-lg" style="font-size: 1.3rem;"></i>&nbsp;&nbsp;&nbsp;Reštart
+          </span>
+        </button>
+
+        <button disabled class="generateWithParametersButton btn btn-labeled btn-success" id="generateWithParametersButton" type="button" onclick="generate(false)">Generovať</br>s parametrami</button>
+
+        <button disabled class="showSolutionLatexButton btn btn-labeled btn-primary" id="showSolutionLatexButton" type="button" onclick="showLaTeXSolution()">
+          <span class="btn-label" id="latexLabel">
+            <i class="fa fa-lightbulb-o fa-lg" style="font-size: 1.7rem;"></i>&nbsp;&nbsp;&nbsp;Zobraziť riešenie (LaTeX)
+          </span>
+        </button>
+
+        <button disabled class="showSolutionTextButton btn btn-labeled btn-primary" id="showSolutionTextButton" type="button" onclick="showTextSolution()">
+          <span class="btn-label" id="textLabel">
+            <i class="fa fa-lightbulb-o fa-lg" style="font-size: 1.7rem;"></i>&nbsp;&nbsp;&nbsp;Zobraziť riešenie (text)
+          </span>
+        </button>
+
+        <button disabled class="copySolutionButton btn btn-labeled btn-primary" id="copySolutionButton" type="button" onclick="copyToClipboard()">
+          <span class="btn-label" id="copyLabel">
+            <i class="fa fa-clipboard fa-lg"></i>&nbsp;&nbsp;&nbsp;Kopírovať riešenie
+          </span>
+        </button>
+
+        <button disabled class="exportPDFButton btn btn-labeled btn-primary" id="exportPDFButton" type="button" onclick="generatePDF()">
+          <span class="btn-label" id="PDFLabel">
+            <i class="fa fa-file-pdf-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Export do PDF
+          </span>
+        </button>
+
+        <div class="checkSolutionButtonField">
+          <br><input disabled class="checkSolutionField form-control" id="checkSolutionField" type="text" placeholder="Pole pre výsledok" onclick="this.focus();this.select()"><br>
+            <button disabled class="checkSolutionButton btn btn-labeled btn-primary" id="checkSolutionButton" onclick="UserInputChecker.checkSolution()">
+              <span class="btn-label" id="checkLabel">
+                <i class="fa fa-search fa-lg" style="font-size: 1.3rem;"></i>&nbsp;&nbsp;&nbsp;Skontrolovať
+              </span>
+            </button>
+        </div>
+
+        <!-- Fields for parameters -->
+        <form class="parameterFields">
+          <div class="block">
+            <label><font id="parameterText1" size="2.5">Parameter #1</font></label>
+            <input class="form-control" id="parameterField1" type="text" onclick="this.focus();this.select()" disabled/>
+          </div>
+          <br>
+          <div class="block">
+            <label><font id="parameterText2" size="2.5">Parameter #2</font></label>
+            <input class="form-control" id="parameterField2" type="text" onclick="this.focus();this.select()" disabled/>
+          </div>
+          <br>
+          <div class="block">
+            <label><font id="parameterText3" size="2.5">Parameter #3</font></label>
+            <input class="form-control" id="parameterField3" type="text" onclick="this.focus();this.select()" disabled/>
+          </div>
+          <br>
+          <div class="block">
+            <label><font id="parameterText4" size="2.5">Parameter #4</font></label>
+            <input class="form-control" id="parameterField4" type="text" onclick="this.focus();this.select()" disabled>
+          </div>
+        </form>
+
+        <!-- Output windows -->
+        <div class="assignmentWindow" id="firstWindow">
+          <p onselectstart='return false;' id="firstOutput"/>
+        </div>
+        <div class="solutionWindow" id="secondWindow">
+          <p onselectstart='return false;' id="secondOutput"/>
+        </div>
+        <div class="temporaryWindow" id="thirdWindow">
+          <p onselectstart='return false;' id="tmpOutput"/>
+        </div>
+
+        <!-- Help modal -->
+        <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="helpModalLongTitle">Nápoveda</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown active">
+                      <a class="nav-link dropdown-toggle" id="typeLabel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Popis príkladov
+                      </a>
+                      <div class="dropdown-menu" id="exercisesDropDown" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" onclick="showHelpText(0, 2);">Najväčší spoločný deliteľ</a>
+                        <a class="dropdown-item" onclick="showHelpText(1, 2);">Bezoutova rovnosť</a>
+                        <a class="dropdown-item" onclick="showHelpText(2, 2);">Inverzia modulo n</a>
+                        <a class="dropdown-item" onclick="showHelpText(3, 1);">Eulerova funkcia φ</a>
+                        <a class="dropdown-item" onclick="showHelpText(4, 3);">Lineárna kongruencia</a>
+                        <a class="dropdown-item" onclick="showHelpText(5, 4);">Sústava lineárnych kongruencií</a>
+                        <a class="dropdown-item" onclick="showHelpText(6, 2);">Rád prvku grupy jednotiek</a>
+                        <a class="dropdown-item" onclick="showHelpText(7, 3);">Modulárne umocňovanie</a>
+                        <a class="dropdown-item" onclick="showHelpText(8, 2);">Legendreov symbol</a>
+                        <a class="dropdown-item" onclick="showHelpText(9, 2);">Kvadratická kongruencia (binomická)</a>
+                        <a class="dropdown-item" onclick="showHelpText(10, 4);">Kvadratická kongruencia (obecná)</a>
+                        <a class="dropdown-item" onclick="showHelpText(11, 3);">Binomická kongruencia</a>
+                        <a class="dropdown-item" onclick="showHelpText(12, 2);">Rád permutácie</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown active">
+                      <a class="nav-link dropdown-toggle" id="definitionsLabel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Definície
+                      </a>
+                      <div class="dropdown-menu" id="definitionsDropDown" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" onclick="showDefinition(0)">Základné vlastnosti deliteľnosti</a>
+                        <a class="dropdown-item" onclick="showDefinition(1)">Najväčší spoločný deliteľ</a>
+                        <a class="dropdown-item" onclick="showDefinition(2)">Najmenší spoločný násobok</a>
+                        <a class="dropdown-item" onclick="showDefinition(3)">Prvočíslo</a>
+                        <a class="dropdown-item" onclick="showDefinition(4)">Základná veta aritmetiky</a>
+                        <a class="dropdown-item" onclick="showDefinition(5)">Inverzia modulo m</a>
+                        <a class="dropdown-item" onclick="showDefinition(6)">Dokonalé číslo</a>
+                        <a class="dropdown-item" onclick="showDefinition(7)">Eulerova funkcia φ</a>
+                        <a class="dropdown-item" onclick="showDefinition(8)">Eulerova veta</a>
+                        <a class="dropdown-item" onclick="showDefinition(9)">Kongruencia</a>
+                        <a class="dropdown-item" onclick="showDefinition(10)">Malá Fermátova veta</a>
+                        <a class="dropdown-item" onclick="showDefinition(11)">Rád čísla</a>
+                        <a class="dropdown-item" onclick="showDefinition(12)">Primitívny koreň modulo m</a>
+                        <a class="dropdown-item" onclick="showDefinition(13)">Čínska zvyšková veta</a>
+                        <a class="dropdown-item" onclick="showDefinition(14)">Kvadratický a mocninný zvyšok</a>
+                        <a class="dropdown-item" onclick="showDefinition(15)">Legendreov Symbol</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" id="keyShortCutsLabel" onclick="showKeyShortcuts()">Klávesové skratky</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" id="aboutLabel" onclick="about()">O Aplikácii</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="tutorialWindow">
+                <p id="tutorialOutput"/>
+              </div>
+              <div class="modal-footer">
+                <a class="github-button" href="https://github.com/maarioz/Numbermat-WebApp/issues" data-size="large" aria-label="Issue maarioz/Numbermat-WebApp on GitHub">Issue</a>
+                <button type="button" class="btn btn-secondary ml-auto" id="closeModal" data-dismiss="modal">Zatvoriť</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Language flags -->
+        <div class="flags">
+          <a href="#sk"><img src="images/flagSK.png" onclick="applyLanguage(sk);"></img></a>
+          <a href="#cz"><img src="images/flagCZ.png" onclick="applyLanguage(cz);"></img></a>
+          <a href="#en"><img src="images/flagEN.png" onclick="applyLanguage(en);"></img></a>
+          <a class="smallHorizontalLine"><img src="images/line3.png"></a>
+        </div>
+
+      </div>
+    </div>
+  </body>
+  <script> applyLanguage(LANGUAGE); </script>
+  <script src="js/algorithms/Algorithms.js"></script>
+  <script src="js/algorithms/UserInputChecker.js"></script>
+  <script src="js/algorithms/AlgorithmSteps.js"></script>
+  <script src="js/algorithms/DisplayUtils.js"></script>
+  <script src="js/problems/GCDProblem.js"></script>
+  <script src="js/problems/BezoutProblem.js"></script>
+  <script src="js/problems/InverseModProblem.js"></script>
+  <script src="js/problems/EulerPhiProblem.js"></script>
+  <script src="js/problems/LegendreSymbolProblem.js"></script>
+  <script src="js/problems/BinomialCongruenceProblem.js"></script>
+  <script src="js/problems/LinearCongruenceSystemProblem.js"></script>
+  <script src="js/problems/LinearCongruenceProblem.js"></script>
+  <script src="js/problems/ModularPowerProblem.js"></script>
+  <script src="js/problems/PermutationOrderProblem.js"></script>
+  <script src="js/problems/QuadraticCongruenceGeneralProblem.js"></script>
+  <script src="js/problems/QuadraticCongruenceSimpleProblem.js"></script>
+  <script src="js/problems/UnitGroupElementOrderProblem.js"></script>
+  <script src="js/main.js"></script>
+</html>
