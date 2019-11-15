@@ -60,6 +60,12 @@
   border-radius: 5px 0 0 5px;
 }
 
+@-moz-document url-prefix() {
+  .flags  {
+    top: -1391px;
+  }
+}
+
 .flags a {
   display: inline-block;
   cursor: pointer;
