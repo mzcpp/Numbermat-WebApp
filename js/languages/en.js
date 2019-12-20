@@ -31,6 +31,8 @@ en = {
 
   bezout_1: "Find numbers",
   bezout_2: "such that",
+  legendre_1: "Because",
+  legendre_2: "is a power of 2, we get:",
 
   generate_random: "Generate</br>randomly",
   set_parameters: "Set</br>parameters",
