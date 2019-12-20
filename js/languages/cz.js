@@ -31,6 +31,8 @@ cz = {
 
   bezout_1: "Najděte čísla",
   bezout_2: "aby",
+  legendre_1: "Protože",
+  legendre_2: "je mocnicou čísla 2, dostáváme:",
 
   generate_random: "Generovat</br>náhodně",
   set_parameters: "Nastavit</br>parametry",
