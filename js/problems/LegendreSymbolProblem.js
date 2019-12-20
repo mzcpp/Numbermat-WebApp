@@ -62,7 +62,11 @@ class LegendreSymbolProblem {
     this.solutionLaTeX = DisplayUtils.prepareBasicMath(this.solutionPlainText);
     this.solutionLaTeX = DisplayUtils.prepareFractionsMath(this.solutionLaTeX);
     this.solutionLaTeX = DisplayUtils.prepareAlignMath(this.solutionLaTeX);
-    this.solutionLaTeX = this.solutionLaTeX.replaceAll("\\\\\\\\", "\\\\\n");
+    if (this.a && (this.a & (this.a - 1)) === 0) {
+      let placeholder = "\\begin{aligned} \\text{" + LANGUAGE.legendre_1 + " }a\\text{ " + LANGUAGE.legendre_2 + "} \\end{aligned}\\\\";
+      this.solutionLaTeX = placeholder + this.solutionLaTeX;
+    }
+      this.solutionLaTeX = this.solutionLaTeX.replaceAll("\\\\\\\\", "\\\\\n");
   }
 
   getProblemPlainText() {
