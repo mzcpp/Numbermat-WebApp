@@ -31,6 +31,8 @@ sk = {
 
   bezout_1: "Nájdite čísla",
   bezout_2: "aby",
+  legendre_1: "Pretože",
+  legendre_2: "je mocnicou čísla 2, dostávame:",
 
   generate_random: "Generovať</br>náhodne",
   set_parameters: "Nastaviť</br>parametre",
