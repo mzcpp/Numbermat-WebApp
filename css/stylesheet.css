@@ -181,6 +181,11 @@
   width: 159px;
 }
 
+#confirmation {
+  color: white;
+  cursor: pointer;
+}
+
 /*
 * Field for answer
 */
