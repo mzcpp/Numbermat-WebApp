@@ -87,7 +87,7 @@
           </span>
         </button>
 
-        <button class="restartButton btn btn-labeled btn-info" id="restartButton" data-toggle="modal" data-target="#restartModal">
+        <button class="restartButton btn btn-labeled btn-info" id="restartButton" type="button" onclick="location.reload()">
           <span class="btn-label" id="restartLabel">
             <i class="fa fa-refresh fa-lg" style="font-size: 1.3rem;"></i>&nbsp;&nbsp;&nbsp;Reštart
           </span>
@@ -239,29 +239,6 @@
               <div class="modal-footer">
                 <a class="github-button" href="https://github.com/maarioz/Numbermat-WebApp/issues" data-size="large" aria-label="Issue maarioz/Numbermat-WebApp on GitHub">Issue</a>
                 <button type="button" class="btn btn-secondary ml-auto" id="closeModal" data-dismiss="modal">Zatvoriť</button>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Restart modal -->
-        <div class="modal fade" id="restartModal" tabindex="-1" role="dialog" aria-labelledby="restartModalTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="restartModalLongTitle">Restart Confirmation</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-              <div class="modal-body" id="restartBody">
-                <p>Prajete si reštartovať aplikáciu?</p>
-              </div>
-
-              <div class="modal-footer">
-                <button type="button" id="cancellation" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-danger btn-ok" id="confirmation" onclick="location.reload();">Restart</a>
               </div>
             </div>
           </div>
