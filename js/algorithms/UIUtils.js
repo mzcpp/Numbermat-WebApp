@@ -264,11 +264,6 @@ function applyLanguage(language) {
   document.getElementById("logoImage").innerHTML = language.logo_image;
   document.getElementById("diffImage").innerHTML = language.difficulty_image;
   document.getElementById("typeImage").innerHTML = language.type_image;
- 
-  document.getElementById("confirmation").innerHTML = language.restart;
-  document.getElementById("restartModalLongTitle").innerHTML = language.restart_2;
-  document.getElementById("restartBody").innerHTML = language.restart_3;
-  document.getElementById("cancellation").innerHTML = language.restart_4;
 
   return language;
 }
