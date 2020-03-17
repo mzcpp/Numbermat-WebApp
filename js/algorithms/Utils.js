@@ -266,11 +266,11 @@ document.onkeyup = function(e) {
   return false;
 }
 
-function getLanguage() {
+function getLanguageObject() {
   let hash = window.location.hash;
-  let suffix = hash[hash.length - 2] + hash[hash.length - 1];
-  if (suffix !== "sk" && suffix !== "cz" && suffix !== "en") {
+  if (hash.length === 0) {
     return sk;
   }
-  return eval(suffix);
+  let fragmentIdentifier = hash.slice(1, 3);
+  return eval(fragmentIdentifier);
 }
