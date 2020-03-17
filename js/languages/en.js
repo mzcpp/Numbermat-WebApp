@@ -231,7 +231,7 @@ en = {
 
   about_text:
   "This application is the result of bachelor's thesis at the Faculty of Informatics, Masaryk University in Brno. Its purpose is to generate math problems from number theory and algebra.<br><br>" +
-  "The user can choose from 13 types of math problems. The user can choose from 3 difficulties for each type of problem, or set custom parameters. The application provides a help in the form of description of each problem and mathematical definitions. The application can also export assignments and solutions to files in PDF format. The application supports 3 languages - Slovak, Czech and English." +
+  "The user can choose from 13 types of math problems. The user can choose from 3 difficulties for each type of problem, or set custom parameters. The application provides help in a form of description of each problem and mathematical definitions. The application can also export assignments and solutions to files in PDF format. The application supports 3 languages - Slovak, Czech and English." +
   "<br><br>The source code can be found at <a href='https://github.com/maarioz/Numbermat-WebApp' target='_blank'> GitHub</a>." +
   " The user can report any bug at <a href='https://github.com/maarioz/Numbermat-WebApp/issues' target='_blank'> GitHub Issues</a> or by clicking the Issue button in the bottom left of this help modal.<br><br>",
 
