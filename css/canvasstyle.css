@@ -8,8 +8,12 @@ html, body {
 }
 
 .jumbotron.vertical-center {
-  margin-bottom: 0; /* Remove the default bottom margin of .jumbotron */
-  background-color: transparent !important;
+  border-radius: 0 !important;
+  background-position: fixed;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: radial-gradient(ellipse, rgb(51, 115, 180), rgb(11, 75, 140), rgb(1, 65, 130));
 }
 
 .vertical-center {
@@ -63,12 +67,4 @@ html, body {
   min-width: 942px !important;
   background-color: rgb(214, 217, 223);
   border-radius: 5px 5px 5px 0;
-}
-
-.canvas {
-  background-position: fixed;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: radial-gradient(ellipse, rgb(51, 115, 180), rgb(11, 75, 140), rgb(1, 65, 130));
 }
