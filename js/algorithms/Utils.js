@@ -266,11 +266,13 @@ document.onkeyup = function(e) {
   return false;
 }
 
+/**
+* Retrieves fragment identifier (two characters after the symbol '#') from URI.
+*/
 function getLanguageObject() {
   let hash = window.location.hash;
   if (hash.length === 0) {
     return sk;
   }
-  let fragmentIdentifier = hash.slice(1, 3);
-  return eval(fragmentIdentifier);
+  return eval(hash.slice(1, 3));
 }
