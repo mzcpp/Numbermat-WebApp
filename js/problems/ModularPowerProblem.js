@@ -17,7 +17,7 @@ class ModularPowerProblem {
     let b, e, m;
 
     if (bC === undefined && eC === undefined && mC === undefined && difficulty !== undefined) {
-      this.difficultyBounds = [{first: 5, second: 11}, {first: 11, second: 37}, {first: 37, second: 97}];
+      this.difficultyBounds = [{first: 5, second: 11}, {first: 191, second: 257}, {first: 530, second: 881}];
       let bounds = this.difficultyBounds[initBounds(difficulty)];
       let lowerBound = bounds.first;
       let upperBound = bounds.second;
