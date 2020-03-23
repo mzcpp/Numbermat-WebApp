@@ -14,7 +14,7 @@ class PermutationOrderProblem {
   constructor(difficulty, permutationC) {
     let perm;
     if (permutationC === undefined && difficulty !== undefined) {
-      this.difficultyBounds = [{first: 2, second: 5}, {first: 6, second: 8}, {first: 9, second: 9}];
+      this.difficultyBounds = [{first: 2, second: 5}, {first: 8, second: 11}, {first: 12, second: 16}];
       let bounds = this.difficultyBounds[initBounds(difficulty)];
       let lowerBound = bounds.first;
       let upperBound = bounds.second;
