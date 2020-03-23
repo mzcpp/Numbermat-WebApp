@@ -224,7 +224,7 @@ async function generatePDF() {
 * @param {String} time time in String
 */
 function htmlToCanvasToPDF(pdf, id, date, time) {
-  html2canvas(document.querySelector("#" + id), {scale: 1}).then(canvas => {
+  html2canvas(document.querySelector("#" + id), {scale: 1, scrollX: 0, scrollY: 0}).then(canvas => {
     var img = canvas.toDataURL("image/jpeg", 1.0);
     pdf.addImage(img, 'JPEG', 10, 10);
     pdf.save("numbermat-" + date + "-" + time + ".pdf");
