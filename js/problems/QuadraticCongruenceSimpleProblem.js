@@ -16,7 +16,7 @@ class QuadraticCongruenceSimpleProblem {
   constructor(difficulty, aaC, mmC) {
     let aa, mm;
     if (aaC === undefined && mmC === undefined && difficulty !== undefined) {
-      this.difficultyBounds = [{first: 2, second: 39}, {first: 11, second: 99}, {first: 11, second: 199}];
+      this.difficultyBounds = [{first: 2, second: 39}, {first: 81, second: 199}, {first: 231, second: 539}];
       let bounds = this.difficultyBounds[initBounds(difficulty)];
       let lowerBound = bounds.first;
       let upperBound = bounds.second;
