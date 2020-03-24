@@ -16,7 +16,7 @@ class LegendreSymbolProblem {
     let aa, pp;
 
     if (aaC === undefined && ppC === undefined && difficulty !== undefined) {
-      this.difficultyBounds = [{first: 31, second: 79}, {first: 511, second: 879}, {first: 3912, second: 8190}];
+      this.difficultyBounds = [{first: 31, second: 79}, {first: 411, second: 979}, {first: 3912, second: 8190}];
       let bounds = this.difficultyBounds[initBounds(difficulty)];
       let lowerBound = bounds.first;
       let upperBound = bounds.second;
