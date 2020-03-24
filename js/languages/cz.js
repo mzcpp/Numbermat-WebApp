@@ -119,7 +119,7 @@ cz = {
     ["Kladné celé číslo (n)"],
     ["Celé číslo (a)", "Celé číslo (b)", "Kladné celé číslo (n)"],
     ["Počet rovnic (max. 4)", "Celá čísla (a_i)", "Celá čísla (b_i)", "Kladná celá čísla (n_i)"],
-    ["Kladné celé číslo (prvek)", "Řád grupy (min. 2)"],
+    ["Kladné celé číslo (prvek)", "Modulo (min. 2)"],
     ["Celé číslo (b)", "Nezáporné celé číslo (e)", "Kladné celé číslo (m)"],
     ["Celé číslo (a)", "Liché prvočíslo (p)"],
     ["Celé číslo (a)", "Kladné celé číslo (m)"],
