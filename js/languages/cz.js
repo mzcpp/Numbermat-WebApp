@@ -32,7 +32,7 @@ cz = {
   bezout_1: "Najděte čísla",
   bezout_2: "aby",
   legendre_1: "Protože",
-  legendre_2: "je mocnicou čísla 2, dostáváme:",
+  legendre_2: "je mocninou čísla 2, dostáváme:",
 
   generate_random: "Generovat</br>náhodně",
   set_parameters: "Nastavit</br>parametry",
@@ -45,17 +45,17 @@ cz = {
   restart_2: "Potvrzení Restartu",
   restart_3: "Přejete si restartovat aplikaci?",
   restart_4: "Zrušit",
-  generate_parameters: "Generovat</br>s parametrami",
+  generate_parameters: "Generovat</br>s parametry",
   show_latex: "Zobrazit řešení (LaTeX)",
   show_text: "Zobrazit řešení (text)",
   copy: "Kopírovat řešení",
   export: "Export do PDF",
-  check_answer: "Skontrolovat",
+  check_answer: "Zkontrolovat",
   placeholder: "Pole pro výsledek",
 
   description: "Popis příkladů",
   definition: "Definice",
-  keys: "Klávesové skratky",
+  keys: "Klávesové zkratky",
   about: "O Aplikaci",
   close: "Zavřít",
 
@@ -64,7 +64,7 @@ cz = {
   format: "Formát výsledku:",
 
   please_integer: "Prosím zadejte celé číslo v rozsahu",
-  no_zero: "Nula není povolená.",
+  no_zero: "Nula není povolena.",
   coprime: "Čísla musí být nesoudělné!",
   smaller: "První číslo musí být menší než druhé!",
   enter: "Prosím, zadejte",
@@ -73,8 +73,8 @@ cz = {
   prime: "prvočíslo",
   not_perm: "Zadaná sekvence není permutací.",
   only_integers: "Pole musí obsahovat jenom celá čísla.",
-  only_positive: "Pole musí obsahovat jenom kladné čísla.",
-  integers: " celočíselné koeficienty oddělené mezerou",
+  only_positive: "Pole musí obsahovat jenom kladná čísla.",
+  integers: " celočíselné koeficienty odděleny mezerou",
   no_solution: "Příklad nemá řešení.",
   solution: "řešení",
   solutions: "řešení",
@@ -104,10 +104,10 @@ cz = {
     "Eulerova funkce φ",
     "Eulerova věta",
     "Kongruence",
-    "Malá Fermátova věta",
+    "Malá Fermatova věta",
     "Řád čísla",
     "Primitivní kořen modulo m",
-    "Čínska zbytková věta",
+    "Čínská věta o zbytcích",
     "Kvadratický a mocninný zbytek",
     "Legendreův symbol"
   ],
@@ -119,13 +119,13 @@ cz = {
     ["Kladné celé číslo (n)"],
     ["Celé číslo (a)", "Celé číslo (b)", "Kladné celé číslo (n)"],
     ["Počet rovnic (max. 4)", "Celá čísla (a_i)", "Celá čísla (b_i)", "Kladná celá čísla (n_i)"],
-    ["Kladné celé číslo (prvek)", "Modulo (min. 2)"],
+    ["Kladné celé číslo (prvek)", "Řád grupy (min. 2)"],
     ["Celé číslo (b)", "Nezáporné celé číslo (e)", "Kladné celé číslo (m)"],
     ["Celé číslo (a)", "Liché prvočíslo (p)"],
     ["Celé číslo (a)", "Kladné celé číslo (m)"],
     ["Nenulové celé číslo (a)", "Celé číslo (b)", "Celé číslo (c)", "Kladné celé číslo, (a, m) = 1"],
     ["Kladné celé číslo (n)", "Celé číslo (a)", "Kladné celé číslo (m)"],
-    ["Počet prvků (max. 10))", "Permutace"]
+    ["Počet prvků", "Permutace"]
   ],
 
   results: [
@@ -138,15 +138,15 @@ cz = {
     "Řád <i>k</i> prvku <i>e</i> dané grupy, t.j. číslo takové, že <i>e</i>^<i>k</i> = 1.",
     "Číslo <i>x</i> takové, že <i>b</i>^<i>e</i> ≡ <i>x</i> (mod <i>m</i>).",
     "Legendreův symbol (<i>a</i> / <i>p</i>).",
-    "Seznam nezáporných čísel <i>r1</i>, <i>r2</i>, ..., <i>rn</i>, <i>t</i> takých, že <i>x</i> ≡ <i>r_i</i> (mod <i>t</i>) je řešením kongruence<br><i>x</i>^2 ≡ <i>a</i> (mod <i>m</i>).",
-    "Seznam nezáporných čísel <i>r1</i>, <i>r2</i>, ..., <i>rn</i>, <i>t</i> takých, že <i>x</i> ≡ <i>r_i</i> (mod <i>t</i>) je řešením kongruence<br><i>ax</i>^2 + <i>bx</i> + <i>c</i> ≡ 0 (mod <i>m</i>).",
-    "Seznam nezáporných čísel <i>r1</i>, <i>r2</i>, ..., <i>rn</i>, <i>t</i> takých, že <i>x</i> ≡ <i>r_i</i> (mod <i>t</i>) je řešením kongruence<br><i>x</i>^<i>n</i> ≡ <i>a</i> (mod <i>m</i>).",
+    "Seznam nezáporných čísel <i>r1</i>, <i>r2</i>, ..., <i>rn</i>, <i>t</i> takových, že <i>x</i> ≡ <i>r_i</i> (mod <i>t</i>) je řešením kongruence<br><i>x</i>^2 ≡ <i>a</i> (mod <i>m</i>).",
+    "Seznam nezáporných čísel <i>r1</i>, <i>r2</i>, ..., <i>rn</i>, <i>t</i> takových, že <i>x</i> ≡ <i>r_i</i> (mod <i>t</i>) je řešením kongruence<br><i>ax</i>^2 + <i>bx</i> + <i>c</i> ≡ 0 (mod <i>m</i>).",
+    "Seznam nezáporných čísel <i>r1</i>, <i>r2</i>, ..., <i>rn</i>, <i>t</i> takových, že <i>x</i> ≡ <i>r_i</i> (mod <i>t</i>) je řešením kongruence<br><i>x</i>^<i>n</i> ≡ <i>a</i> (mod <i>m</i>).",
     "Řád <i>k</i> dané permutace σ, t.j. číslo takové, že σ^<i>k</i> = id.",
   ],
 
   definitions_text: [
     "Celé číslo <i>a</i> dělí celé číslo <i>b</i> (neboli číslo <i>b</i> je dělitelné číslem <i>a</i>, též <i>b</i> je násobkem <i>a</i>), pokud existuje celé"
-    + " číslo <i>c</i> tak, že platí <i>a</i> * <i>c</i> = <i>b</i>. Píšeme pak <i>a</i> | <i>b</i>." +
+    + " číslo <i>c</i> takové, že platí <i>a</i> * <i>c</i> = <i>b</i>. Píšeme pak <i>a</i> | <i>b</i>." +
     "<br>Pro libovolné číslo <i>a</i> platí <i>a</i> | <i>a</i>; pro libovolná čísla <i>a</i>, <i>b</i>, <i>c</i> platí tyto 4 implikace:"
     + "<br><br><i>a</i> | <i>b</i> ∧ <i>b</i> | <i>c</i> ⇒ <i>a</i> | <i>c</i><br>" +
     "<i>a</i> | <i>b</i> ∧ <i>b</i> | <i>c</i> ⇒ <i>a</i> | <i>b</i> + <i>c</i> ∧ <i>a</i> | <i>b</i> - <i>c</i><br>" +
@@ -154,19 +154,19 @@ cz = {
     "<i>a</i> | <i>b</i> ∧ <i>b</i> > 0 ⇒ <i>a</i> ≤ <i>b</i>",
 
     "Mějme celá čísla <i>a</i>, <i>b</i>. Libovolné celé číslo <i>m</i> takové, že <i>m</i> | <i>a</i>, <i>m</i> | <i>b</i> se nazývá společný dělitel čísel <i>a</i>, <i>b</i>.<br>" +
-     " Společný dělitel <i>m</i> ≥ 0 čísel <i>a</i>, <i>b</i>, který je dělitelný libovolným společným dělitelem čísel <i>a</i>, <i>b</i>, se nazývá" +
+     " Společný dělitel <i>m</i> ≥ 0 čísel <i>a</i>, <i>b</i>, který je dělitelný libovolným společným dělitelem čísel <i>a</i>, <i>b</i>, se nazývá " +
      "největší společný dělitel čísel <i>a</i>, <i>b</i> a značí se (<i>a</i>, <i>b</i>) (někdy též gcd(<i>a</i>, <i>b</i>) nebo nsd(<i>a</i>, <i>b</i>)).<br><br>" +
-     "Celá čísla <i>a_1</i>, <i>a_2</i>, ..., <i>a_n</i> se nazývají nesoudělné, jestli platí (<i>a_1</i>, <i>a_2</i>, ..., <i>a_n</i>) = 1.<br>" +
+     "Celá čísla <i>a_1</i>, <i>a_2</i>, ..., <i>a_n</i> se nazývají nesoudělná, jestliže platí (<i>a_1</i>, <i>a_2</i>, ..., <i>a_n</i>) = 1.<br>" +
      "Z definice plyne, že pro libovolná celá čísla <i>a</i>, <i>b</i>, platí:<br><br>" +
      "(<i>a</i>, <i>b</i>) = (<i>b</i>, <i>a</i>)<br>(<i>a</i>, 1) = 1<br>(<i>a</i>, 0) = |<i>a</i>|",
 
-    "Mějme celá čísla <i>a</i>, <i>b</i>. Nejmenší společný násobek je najmenší přirozené číslo, které je dělitelné oběma číslami <i>a</i>, <i>b</i>. Značí se [<i>a</i>, <i>b</i>] (případne lcm(<i>a</i>, <i>b</i>) nebo nsn(<i>a</i>, <i>b</i>)).<br>"
+    "Mějme celá čísla <i>a</i>, <i>b</i>. Nejmenší společný násobek je nejmenší přirozené číslo, které je dělitelné oběma číslami <i>a</i>, <i>b</i>. Značí se [<i>a</i>, <i>b</i>] (případne lcm(<i>a</i>, <i>b</i>) nebo nsn(<i>a</i>, <i>b</i>)).<br>"
     + "Z definice plyne, že pro libovolná celá čísla <i>a</i>, <i>b</i>, platí:<br><br>" + "[<i>a</i>, <i>b</i>] = [<i>b</i>, <i>a</i>]<br>[<i>a</i>, 1] = |<i>a</i>|<br>[<i>a</i>, 0] = 0",
 
-    "Každé přirozené číslo <i>n</i> ≥ 2 má aspoň dva kladné dělitele: 1 a <i>n</i>. Pokud kromě těchto dvou jiné kladné dělitele nemá, nazývá se prvočíslo. V opačném případe hovoříme o složeném čísle.",
+    "Každé přirozené číslo <i>n</i> ≥ 2 má alespoň dva kladné dělitele: 1 a <i>n</i>. Pokud kromě těchto dvou jiné kladné dělitele nemá, nazývá se prvočíslo. V opačném případe hovoříme o složeném čísle.",
 
     "Libovolné přirozené číslo <i>n</i> je možné vyjádřit jako součin prvočísel, přičemž je toto vyjádření jediné, nebereme-li v úvahu pořadí činitelů.<br>" +
-    "(Je-li <i>n</i> prvočíslo, pak jde o ,,součin'' jednoho prvočísla, <i>n</i> = 1 je součinem prázdné množiny prvočísel)",
+    "(Je-li <i>n</i> prvočíslo, pak jde o „součin“ jednoho prvočísla, <i>n</i> = 1 je součinem prázdné množiny prvočísel)",
 
     "Celé číslo <i>x</i> je inverzí modulo <i>m</i> celého čísla <i>a</i> tehdy, když platí <i>a</i> * <i>x</i> ≡ 1 (mod <i>m</i>). Inverze modulo <i>m</i> existuje jenom tehdy, když platí (<i>a</i>, <i>m</i>) = 1. Zároveň platí <i>a</i> * <i>a</i>^-1 ≡ 1 (mod <i>m</i>) kde <i>a</i>^-1 je inverze modulo <i>m</i> čísla <i>a</i>.",
 
@@ -178,9 +178,9 @@ cz = {
 
     "Nechť <i>a</i> je celé číslo, <i>m</i> přirozené číslo a zároveň (<i>a</i>, <i>m</i>) = 1. Potom platí <i>a</i>^φ(m) ≡ 1 (mod <i>m</i>) kde φ je Eulerova funkce.",
 
-    "Jestliže dvě celá čísla <i>a</i>, <i>b</i> mají při dělení přirozeným číslem <i>m</i> týž zbytek <i>r</i>, kde 0 ≤ <i>r</i> < <i>m</i>, nazývají sa <i>a</i>, <i>b</i> kongruentní modulo <i>m</i>. Zapisujeme <i>a</i> ≡ <i>b</i> (mod <i>m</i>) nebo <i>a</i> ≡ <i>b</i> (<i>m</i>). " +
+    "Jestliže dvě celá čísla <i>a</i>, <i>b</i> mají při dělení přirozeným číslem <i>m</i> týž zbytek <i>r</i>, kde 0 ≤ <i>r</i> < <i>m</i>, nazývají se <i>a</i>, <i>b</i> kongruentní modulo <i>m</i>. Zapisujeme <i>a</i> ≡ <i>b</i> (mod <i>m</i>) nebo <i>a</i> ≡ <i>b</i> (<i>m</i>). " +
     "V opačném případe řekneme, že <i>a</i>, <i>b</i> nejsou kongruentní modulo <i>m</i>, a píšeme <i>a</i> ≢ <i>b</i> (mod <i>m</i>) nebo <i>a</i> ≢ <i>b</i> (<i>m</i>). " +
-    "Pro celé čísla <i>a</i>, <i>b</i> a přirozené číslo <i>m</i> jsou následující podmínky ekvivalentní:<br><br>" +
+    "Pro celá čísla <i>a</i>, <i>b</i> a přirozené číslo <i>m</i> jsou následující podmínky ekvivalentní:<br><br>" +
 
     "(1) <i>a</i> ≡ <i>b</i> (mod <i>m</i>)<br>" +
     "(2) <i>a</i> = <i>b</i> + <i>mt</i> pro vhodné celé číslo <i>t</i><br>" +
@@ -188,25 +188,25 @@ cz = {
 
     "Vlastnosti kongruencí:<br><br>" +
 
-    "(1) Konguence podle téhož modulu můžeme sčítat. K některé straně kongruence můžeme přičítat libovolný násobek modulu.<br>" +
+    "(1) Konguence podle téhož modulu můžeme sčítat. K některé straně kongruence můžeme přičíst libovolný násobek modulu.<br>" +
     "(2) Konguence podle téhož modulu můžeme násobit.<br>" +
     "(3) Obě strany kongruence je možné umocnit na totéž přirozené číslo.<br>" +
     "(4) Obě strany kongruence můžeme vydělit jejich společným dělitelem, jestliže je tento dělitel nesoudělný s modulem. Obě strany kongruence i její modul můžeme vydělit jejich společným kladným dělitelem.<br>" +
     "(5) Jestliže kongruence platí podle modulu <i>m</i>, platí podle libovolného modulu <i>d</i>, který je dělitelem čísla <i>m</i>.<br>" +
     "(6) Jestliže je jedna strana kongruence a modul dělitelný nějakým celým číslem, musí být tímto číslem dělitelná i druhá strana kongruence.<br>" +
-    "(7) Jestliže kongruence platí podle modulu <i>m_1</i>, ...., <i>m_k</i>, platí i podle modulu, kterým je nejmenší společný násobek [<i>m_1</i>, ...., <i>m_k</i>] těchto čísel.",
+    "(7) Jestliže kongruence platí podle modulů <i>m_1</i>, ...., <i>m_k</i>, platí i podle modulu, kterým je nejmenší společný násobek [<i>m_1</i>, ...., <i>m_k</i>] těchto čísel.",
 
     "Jestli <i>a</i> je celé číslo a <i>p</i> je prvočíslo nedělící <i>a</i>, potom platí <i>a</i>^(<i>p</i> - 1) ≡ 1 (mod <i>p</i>).",
 
     "Nechť je <i>a</i> libovolné celé číslo, nechť je <i>m</i> libovolné přirozené číslo a platí (<i>a</i>, <i>m</i>) = 1. Řádem čísla <i>a</i> modulo <i>m</i> rozumíme nejmenší přirozené číslo <i>n</i> splňující <i>a</i>^<i>n</i> ≡ 1 (mod <i>m</i>).",
 
-    "Nechť je <i>m</i> libovolné přirozené číslo. Celé číslo <i>g</i>, takové že (<i>g</i>, <i>m</i>) = 1, nazveme primitívnym kořenem modulo <i>m</i>, jestli je jeho řád modulo m rovný φ(<i>m</i>). " +
-    "Nechť je <i>m</i> libovolné přirozené číslo a <i>m</i> > 1. Pak primitivní koreňe modulo <i>m</i> existují právě tehdy, když <i>m</i> splňuje některou z následujících podmínek: <br><br>" +
+    "Nechť je <i>m</i> libovolné přirozené číslo. Celé číslo <i>g</i>, takové že (<i>g</i>, <i>m</i>) = 1, nazveme primitívním kořenem modulo <i>m</i>, pokud je jeho řád modulo m roven φ(<i>m</i>). " +
+    "Nechť je <i>m</i> libovolné přirozené číslo a <i>m</i> > 1. Pak primitivní kořeny modulo <i>m</i> existují právě tehdy, když <i>m</i> splňuje některou z následujících podmínek: <br><br>" +
     "(1) <i>m</i> = 2 nebo <i>m</i> = 4<br>" +
     "(2) <i>m</i> je mocnina lichého prvočísla<br>" +
     "(3) <i>m</i> je dvojnásobek mocniny lichého prvočísla",
 
-    "Jsou-li <i>m_1</i>, <i>m_2</i>, ..., <i>m_n</i> po dvou nesoudělné přirozené čísla a <i>a_1</i>, <i>a_2</i>, ..., <i>a_r</i> libovolná celá čísla, pak má soustava kongruencí:<br><br>" +
+    "Jsou-li <i>m_1</i>, <i>m_2</i>, ..., <i>m_n</i> po dvou nesoudělná přirozená čísla a <i>a_1</i>, <i>a_2</i>, ..., <i>a_r</i> libovolná celá čísla, pak má soustava kongruencí:<br><br>" +
     "<i>x</i> ≡ <i>a_1</i> (mod <i>m_1</i>)<br>" +
     "<i>x</i> ≡ <i>a_2</i> (mod <i>m_2</i>)<br>" +
     "&emsp;&emsp;.<br>" +
@@ -216,7 +216,7 @@ cz = {
 
     "o neznámé <i>x</i> právě jedno řešení patřící do množiny {1, 2, ..., <i>m_1</i>, <i>m_2</i>, ..., <i>m_r</i>}.",
 
-    "Nechť je <i>m</i> prirodzené číslo, <i>a</i> celé číslo a (<i>a</i>, <i>m</i>) = 1. Číslo <i>a</i> nazveme <i>n</i>-tým mocninným zbytkem modulo <i>m</i>, pokud je kongruencie <i>x</i>^<i>n</i> ≡ <i>a</i> (mod <i>m</i>) řešitelná. " +
+    "Nechť je <i>m</i> přirozené číslo, <i>a</i> celé číslo a (<i>a</i>, <i>m</i>) = 1. Číslo <i>a</i> nazveme <i>n</i>-tým mocninným zbytkem modulo <i>m</i>, pokud je kongruence <i>x</i>^<i>n</i> ≡ <i>a</i> (mod <i>m</i>) řešitelná. " +
     "V opačném případe <i>a</i> nazveme <i>n</i>-tým mocninným nezbytkem modulo <i>m</i>. Pro <i>n</i> = 2, 3, 4 používame termíny kvadratický, kubický a bikvadratický zbytek, resp. nezbytek modulo <i>m</i>.",
 
     "Nechť je <i>p</i> liché prvočíslo, <i>a</i> celé číslo. Legendreův symbol definujeme předpisem:<br><br>" +
@@ -224,16 +224,16 @@ cz = {
   	"&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;|_   &nbsp;0 pro <i>p</i> | <i>a</i><br>" +
   	"&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;|_  -1 je-li <i>a</i> kvadratický nezbytek modulo <i>p</i><br><br>" +
 
-    "Legendreův symbol často zapisujeme jako (<i>a</i> / <i>p</i>) a symbol čteme jako ,,<i>a</i> vzhledem k <i>p</i>''."
+    "Legendreův symbol často zapisujeme rovněž jako (<i>a</i> / <i>p</i>) a symbol čteme jako ,,<i>a</i> vzhledem k <i>p</i>''."
   ],
 
   keys_text: '<img src="images/shortcutsCZ.png"></div>',
 
   about_text:
-  "Tato webová aplikace je výstupem bakalářské práce na Fakulte informatiky Masarykovy univerzity v Brne. Slouží na generování zadání a řešení úloh z teorie čísel a algebry.<br><br>" +
-  "Uživatel má na výběr z 13 typů příkladů. Pro každý typ příkladu má uživatel na výběr jednu z 3 obtížností, nebo si může nastavit vlastní parametry. Aplikace obsahuje nápovědu ve formě popisu příkladů a matematických definicí. Aplikace dále poskytuje možnost exportu zadání a řešení do souboru ve formátu PDF. Zároveň je možné si vybrat jazyk aplikace - Slovenský, Český nebo Anglický." +
+  "Tato webová aplikace je výstupem bakalářské práce na Fakultě informatiky Masarykovy univerzity v Brne. Slouží pro generování zadání a řešení úloh z teorie čísel a algebry.<br><br>" +
+  "Uživatel má na výběr z 13 typů příkladů. Pro každý typ příkladu má uživatel na výběr jednu z 3 obtížností nebo si může nastavit vlastní parametry. Aplikace obsahuje nápovědu ve formě popisu příkladů a matematických definic. Aplikace dále poskytuje možnost exportu zadání a řešení do souboru ve formátu PDF. Zároveň je možné si vybrat jazyk aplikace - Slovenský, Český nebo Anglický." +
   "<br><br>Zdrojový kód aplikace je dostupný na <a href='https://github.com/maarioz/Numbermat-WebApp' target='_blank'> GitHube</a>." +
-  " Nahlásit jakýkoliv bug může uživatel na <a href='https://github.com/maarioz/Numbermat-WebApp/issues' target='_blank'> GitHub Issues</a> nebo kliknutím na tlačítko Issue v levém dolním rohu nápovědy.<br><br>",
+  " Nahlásit jakýkoliv bug může uživatel na <a href='https://github.com/maarioz/Numbermat-WebApp/issues' target='_blank'> GitHub Issues</a> nebo kliknutím na tlačítko Issue v levém dolním rohu této nápovědy.<br><br>",
 
   result_formats: [
     "Nezáporné celé číslo.",
