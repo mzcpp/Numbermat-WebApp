@@ -6,7 +6,6 @@
 
 sk = {
   title: "Numbermat: Generátor Príkladov",
-
   difficulties: ["Ľahká", "Stredná", "Ťažká"],
 
   exercises: [
@@ -32,7 +31,7 @@ sk = {
   bezout_1: "Nájdite čísla",
   bezout_2: "aby",
   legendre_1: "Pretože",
-  legendre_2: "je mocnicou čísla 2, dostávame:",
+  legendre_2: "je mocninou čísla 2, dostávame:",
 
   generate_random: "Generovať</br>náhodne",
   set_parameters: "Nastaviť</br>parametre",
@@ -109,7 +108,7 @@ sk = {
     "Primitívny koreň modulo m",
     "Čínska zvyšková veta",
     "Kvadratický a mocninný zvyšok",
-    "Legendreov symbol"
+    "Legendrov symbol"
   ],
 
   params: [
@@ -119,13 +118,13 @@ sk = {
     ["Kladné celé číslo (n)"],
     ["Celé číslo (a)", "Celé číslo (b)", "Kladné celé číslo (n)"],
     ["Počet rovníc (max. 4)", "Celé čísla (a_i)", "Celé čísla (b_i)", "Kladné celé čísla (n_i)"],
-    ["Kladné celé číslo (prvok)", "Modulo (min. 2)"],
+    ["Kladné celé číslo (prvok)", "Rád grupy (min. 2)"],
     ["Celé číslo (b)", "Nezáporné celé číslo (e)", "Kladné celé číslo (m)"],
     ["Celé číslo (a)", "Nepárne prvočíslo (p)"],
     ["Celé číslo (a)", "Kladné celé číslo (m)"],
     ["Nenulové celé číslo (a)", "Celé číslo (b)", "Celé číslo (c)", "Kladné celé číslo, (a, m) = 1"],
     ["Kladné celé číslo (n)", "Celé číslo (a)", "Kladné celé číslo (m)"],
-    ["Počet prvkov (max. 10)", "Permutácia"]
+    ["Počet prvkov", "Permutácia"]
   ],
 
   results: [
@@ -137,7 +136,7 @@ sk = {
     "Dvojica čísel <i>r</i>, <i>t</i> takých, že <i>x</i> ≡ <i>r</i> (mod <i>t</i>) je riešením kongruencií <i>a_i</i> <i>x</i> ≡ <i>b_i</i> (mod <i>n_i</i>).",
     "Rád <i>k</i> prvku <i>e</i> danej grupy, t.j. číslo také, že <i>e</i>^<i>k</i> = 1.",
     "Číslo <i>x</i> také, že <i>b</i>^<i>e</i> ≡ <i>x</i> (mod <i>m</i>).",
-    "Legendreov symbol (<i>a</i> / <i>p</i>).",
+    "Legendrov symbol (<i>a</i> / <i>p</i>).",
     "Zoznam nezáporných čísel <i>r1</i>, <i>r2</i>, ..., <i>rn</i>, <i>t</i> takých, že <i>x</i> ≡ <i>r_i</i> (mod <i>t</i>) je riešením kongruencie<br><i>x</i>^2 ≡ <i>a</i> (mod <i>m</i>).",
     "Zoznam nezáporných čísel <i>r1</i>, <i>r2</i>, ..., <i>rn</i>, <i>t</i> takých, že <i>x</i> ≡ <i>r_i</i> (mod <i>t</i>) je riešením kongruencie<br><i>ax</i>^2 + <i>bx</i> + <i>c</i> ≡ 0 (mod <i>m</i>).",
     "Zoznam nezáporných čísel <i>r1</i>, <i>r2</i>, ..., <i>rn</i>, <i>t</i> takých, že <i>x</i> ≡ <i>r_i</i> (mod <i>t</i>) je riešením kongruencie<br><i>x</i>^<i>n</i> ≡ <i>a</i> (mod <i>m</i>).",
@@ -219,7 +218,7 @@ sk = {
     "Nech je <i>m</i> prirodzené číslo, <i>a</i> celé číslo a (<i>a</i>, <i>m</i>) = 1. Číslo <i>a</i> nazveme <i>n</i>-tým mocninným zvyškom modulo <i>m</i>, pokiaľ je kongruencia <i>x</i>^<i>n</i> ≡ <i>a</i> (mod <i>m</i>) riešiteľná. " +
     "V opačnom prípade <i>a</i> nazveme <i>n</i>-tým mocninným nezvyškom modulo <i>m</i>. Pre <i>n</i> = 2, 3, 4 používame termíny kvadratický, kubický a bikvadratický zvyšok, resp. nezvyšok modulo <i>m</i>.",
 
-    "Nech je <i>p</i> nepárne prvočíslo, <i>a</i> celé číslo. Legendreov symbol definujeme predpisom:<br><br>" +
+    "Nech je <i>p</i> nepárne prvočíslo, <i>a</i> celé číslo. Legendrov symbol definujeme predpisom:<br><br>" +
     "(<i>a</i> / <i>p</i>) = &nbsp;_ &nbsp;1 pre  <i>p</i> ∤ <i>a</i>, <i>a</i> je kvadratický zvyšok modulo <i>p</i><br>" +
   	"&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;|_   &nbsp;0 pre <i>p</i> | <i>a</i><br>" +
   	"&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;|_  -1 ak je <i>a</i> kvadratický nezvyšok modulo <i>p</i><br><br>" +
@@ -230,10 +229,10 @@ sk = {
   keys_text: '<img src="images/shortcutsSK.png"></div>',
 
   about_text:
-  "Táto webová aplikácia je výstupom bakalárskej práce na Fakulte informatiky Masarykovej univerzity v Brne. Slúži na generovanie zadaní a riešení úloh z teórie čísel a algebry.<br><br>" +
+  "Táto webová aplikácia je výstupom bakalárskej práce na Fakulte informatiky Masarykovej univerzity v Brne. Slúži pre generovanie zadaní a riešení úloh z teórie čísel a algebry.<br><br>" +
   "Užívateľ má na výber z 13 typov príkladov. Pre každý typ príkladu si užívateľ môže zvoliť jednu z 3 obtiažností, alebo si nastaviť vlastné parametre. Aplikácia obsahuje nápovedu vo forme popisu príkladov a matematických definícií. Aplikácia ďalej poskytuje možnosť exportu zadania a riešenia do súboru vo formáte PDF. Zároveň si užívateľ môže jazyk aplikácie - Slovenský, Český alebo Anglický." +
   "<br><br>Zdrojový kód aplikácie je dostupný na <a href='https://github.com/maarioz/Numbermat-WebApp' target='_blank'> GitHube</a>." +
-  " Nahlásiť akýkoľvek bug môže užívateľ na <a href='https://github.com/maarioz/Numbermat-WebApp/issues' target='_blank'> GitHub Issues</a> alebo kliknutím na tlačidlo Issue v ľavom dolnom rohu nápovedy.<br><br>",
+  " Nahlásiť akýkoľvek bug môže užívateľ na <a href='https://github.com/maarioz/Numbermat-WebApp/issues' target='_blank'> GitHub Issues</a> alebo kliknutím na tlačidlo Issue v ľavom dolnom rohu tejto nápovedy.<br><br>",
 
   result_formats: [
     "Nezáporné celé číslo.",
