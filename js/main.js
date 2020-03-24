@@ -180,7 +180,7 @@ function generate(random) {
       if (random) {
         MATHPROBLEM = new PermutationOrderProblem(diff, undefined);
       } else {
-        let size = UserInputChecker.numberInput(document.getElementById("parameterField1"), 1, 10, false);
+        let size = UserInputChecker.numberInput(document.getElementById("parameterField1"), 1, 999, false);
         if (size == null) {
           break;
         }
