@@ -118,7 +118,7 @@ sk = {
     ["Kladné celé číslo (n)"],
     ["Celé číslo (a)", "Celé číslo (b)", "Kladné celé číslo (n)"],
     ["Počet rovníc (max. 4)", "Celé čísla (a_i)", "Celé čísla (b_i)", "Kladné celé čísla (n_i)"],
-    ["Kladné celé číslo (prvok)", "Rád grupy (min. 2)"],
+    ["Kladné celé číslo (prvok)", "Modulo (min. 2)"],
     ["Celé číslo (b)", "Nezáporné celé číslo (e)", "Kladné celé číslo (m)"],
     ["Celé číslo (a)", "Nepárne prvočíslo (p)"],
     ["Celé číslo (a)", "Kladné celé číslo (m)"],
