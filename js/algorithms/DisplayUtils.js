@@ -71,7 +71,7 @@ class DisplayUtils {
     if (!input.includes("/")) {
         return input;
     }
-    let fracBegin = "\\left(\\dfrac{";
+    let fracBegin = "\\left(\\tfrac{";
     let fracEnd = "}\\right)";
     let tmp = input;
     let numbers = this.matchNumbers(tmp);
