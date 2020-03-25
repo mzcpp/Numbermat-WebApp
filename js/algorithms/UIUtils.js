@@ -56,6 +56,9 @@ function rightButtonsActivation(boolean) {
 * Cleans output and input contents (windows, parameter and answer fields).
 */
 function cleanBothSides() {
+  document.getElementById("firstWindow").style.font = "16px/26px Georgia, Garamond, Serif";
+  document.getElementById("secondWindow").style.font = "16px/26px Georgia, Garamond, Serif";
+  document.getElementById("thirdWindow").style.font = "";
   document.getElementById("checkSolutionField").style.color = "black";
   document.getElementById("checkSolutionField").classList.remove("placeholderwhite");
 
