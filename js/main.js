@@ -126,6 +126,9 @@ function generate(random) {
       }
       break;
     case 8:
+      document.getElementById("firstWindow").style.font = "26px/26px Georgia, Garamond, Serif";
+      document.getElementById("secondWindow").style.font = "26px/26px Georgia, Garamond, Serif";
+      document.getElementById("thirdWindow").style.font = "26px/26px Georgia, Garamond, Serif";
       if (random) {
         MATHPROBLEM = new LegendreSymbolProblem(diff, undefined, undefined);
       } else {
