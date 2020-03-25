@@ -193,6 +193,7 @@ function sleep(ms) {
 * Generates PDF by taking screenshot of the output window and exporting it to PDF file.
 */
 async function generatePDF() {
+  showLaTeXSolution();
   document.getElementById("exportPDFButton").disabled = true;
   document.getElementById("PDFLabel").innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="width: 1.15rem; height: 1.15rem;"></span>' + '&nbsp;&nbsp;&nbsp;' + LANGUAGE.export;
   await sleep(100);
@@ -201,9 +202,16 @@ async function generatePDF() {
   let date = d.toLocaleDateString();
   let problemHeight = document.getElementById("firstOutput").clientHeight;
   let solutionHeight = document.getElementById("secondOutput").clientHeight;
+  let orientation = "portrait";
+  let paperSize = "a4";
+
+  if (MATHPROBLEM instanceof LegendreSymbolProblem && document.getElementsByClassName("katex-html")[1].getBoundingClientRect().width > 750) {
+      orientation = "landscape";
+      paperSize = "a3";
+  }
 
   let fit = (problemHeight + solutionHeight) < 842;
-  let pdf = new jsPDF("portrait", "mm", fit ? "a4" : [595.28, problemHeight + solutionHeight]);
+  let pdf = new jsPDF(orientation, "mm", fit ? paperSize : [595.28, problemHeight + solutionHeight]);
   var result = MATHPROBLEM.getProblemLaTeX() + "\\\\\\\\\\text{\n}\\\\\\\\\\\\\\\\" + MATHPROBLEM.getSolutionLaTeX();
 
   katex.render(result, document.getElementById("tmpOutput"), {
