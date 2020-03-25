@@ -211,7 +211,7 @@ async function generatePDF() {
   }
 
   let fit = (problemHeight + solutionHeight) < 842;
-  let pdf = new jsPDF(orientation, "mm", fit ? paperSize : [595.28, problemHeight + solutionHeight]);
+  let pdf = new jsPDF(orientation, "mm", fit ? paperSize : [620, problemHeight + solutionHeight]);
   var result = MATHPROBLEM.getProblemLaTeX() + "\\\\\\\\\\text{\n}\\\\\\\\\\\\\\\\" + MATHPROBLEM.getSolutionLaTeX();
 
   katex.render(result, document.getElementById("tmpOutput"), {
