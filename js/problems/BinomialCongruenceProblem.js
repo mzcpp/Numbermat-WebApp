@@ -17,7 +17,7 @@ class BinomialCongruenceProblem {
     let nn = Algorithms.randInt(3, 5);
     let aa, mm;
     if (nnC === undefined && aaC === undefined && mmC === undefined && difficulty !== undefined) {
-      this.difficultyBounds = [{first: 2, second: 11}, {first: 97, second: 139}, {first: 332, second: 587}];
+      this.difficultyBounds = [{first: 2, second: 11}, {first: 57, second: 93}, {first: 112, second: 157}];
       let bounds = this.difficultyBounds[initBounds(difficulty)];
       let lowerBound = bounds.first;
       let upperBound = bounds.second;
