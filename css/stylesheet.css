@@ -290,7 +290,9 @@
 
 .temporaryWindow {
   position: fixed;
-  margin-left: 10000px
+  margin-left: 10000px;
+  width: 5000px;
+  height: 5000px;
 }
 
 .assignmentWindow p {
