@@ -205,7 +205,7 @@ async function generatePDF() {
   let orientation = "portrait";
   let paperSize = "a4";
 
-  if (MATHPROBLEM instanceof LegendreSymbolProblem && document.getElementsByClassName("katex-html")[1].getBoundingClientRect().width > 750) {
+  if ((MATHPROBLEM instanceof LegendreSymbolProblem && document.getElementsByClassName("katex-html")[1].getBoundingClientRect().width > 750) || document.getElementsByClassName("katex-html")[0].getBoundingClientRect().width > 750) {
       orientation = "landscape";
       paperSize = "a3";
   }
