@@ -24,7 +24,7 @@ class BinomialCongruenceProblem {
 
       while (true) {
         aa = Algorithms.randInt(lowerBound, upperBound);
-        if (lowerBound === 2) {
+        if (lowerBound === 112) {
             mm = Algorithms.generateModulus(false);
         } else {
           mm = Algorithms.randPrime(lowerBound, upperBound);
