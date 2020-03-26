@@ -669,7 +669,7 @@ class Algorithms {
     let bigExp = bigInt(exp);
     let bigMod = bigInt(mod);
 
-    return bigBase.modPow(bigExp, bigMod).value;
+    return Number(bigBase.modPow(bigExp, bigMod).value);
   }
 
   /**
