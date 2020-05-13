@@ -731,7 +731,7 @@ class AlgorithmSteps {
         }
         let trailing = "";
         if (exp % order !== 0) {
-          trailing = this.buildPower(base, exp % order + this.MULT);
+          trailing = this.buildPower(base, exp % order) + this.MULT;
         }
         result += trailing;
         if (Math.floor(exp / order) > 1) {
