@@ -230,7 +230,8 @@ cz = {
   keys_text: '<img src="images/shortcutsCZ.png"></div>',
 
   about_text:
-  "Tato webová aplikace je výstupem bakalářské práce na Fakultě informatiky Masarykovy univerzity v Brne. Slouží pro generování zadání a řešení úloh z teorie čísel a algebry.<br><br>" +
+  "Tato webová aplikace je výstupem bakalářské práce na Fakultě informatiky Masarykovy univerzity v Brne. Slouží pro generování zadání a řešení úloh z teorie čísel a algebry. " +
+  "Webová aplikace je založena na původní <a href='https://github.com/svabensky/numbermat' target='_blank'> Java aplikaci Numbermat</a>, jejíž základy položil <a href='https://www.fi.muni.cz/~xsvabens/index.html' target='_blank'> Valdemar Švábenský</a> ve své bakalářské práci v roce 2014.<br><br>" +
   "Uživatel má na výběr z 13 typů příkladů. Pro každý typ příkladu má uživatel na výběr jednu z 3 obtížností nebo si může nastavit vlastní parametry. Aplikace obsahuje nápovědu ve formě popisu příkladů a matematických definic. Aplikace dále poskytuje možnost exportu zadání a řešení do souboru ve formátu PDF. Zároveň je možné si vybrat jazyk aplikace - Slovenský, Český nebo Anglický." +
   "<br><br>Zdrojový kód aplikace je dostupný na <a href='https://github.com/maarioz/Numbermat-WebApp' target='_blank'> GitHube</a>." +
   " Nahlásit jakýkoliv bug může uživatel na <a href='https://github.com/maarioz/Numbermat-WebApp/issues' target='_blank'> GitHub Issues</a> nebo kliknutím na tlačítko Issue v levém dolním rohu této nápovědy.<br><br>",
