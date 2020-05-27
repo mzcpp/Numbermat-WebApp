@@ -231,7 +231,7 @@ sk = {
   about_text:
   "Táto webová aplikácia je výstupom bakalárskej práce na Fakulte informatiky Masarykovej univerzity v Brne. Slúži pre generovanie zadaní a riešení úloh z teórie čísel a algebry. " +
   "Webová aplikácia je založená na pôvodnej <a href='https://github.com/svabensky/numbermat' target='_blank'> Java aplikácii Numbermat</a>, ktorej základy položil <a href='https://www.fi.muni.cz/~xsvabens/index.html' target='_blank'> Valdemar Švábenský</a> vo svojej bakalárskej práci v roku 2014.<br><br>" +
-  "Užívateľ má na výber z 13 typov príkladov. Pre každý typ príkladu si užívateľ môže zvoliť jednu z 3 obtiažností, alebo si nastaviť vlastné parametre. Aplikácia obsahuje nápovedu vo forme popisu príkladov a matematických definícií. Aplikácia ďalej poskytuje možnosť exportu zadania a riešenia do súboru vo formáte PDF. Zároveň si užívateľ môže jazyk aplikácie - Slovenský, Český alebo Anglický." +
+  "Užívateľ má na výber z 13 typov príkladov. Pre každý typ príkladu si užívateľ môže zvoliť jednu z 3 obtiažností, alebo si nastaviť vlastné parametre. Aplikácia obsahuje nápovedu vo forme popisu príkladov a matematických definícií. Aplikácia ďalej poskytuje možnosť exportu zadania a riešenia do súboru vo formáte PDF. Zároveň si užívateľ môže jazyk aplikácie - slovenský, český alebo anglický." +
   "<br><br>Zdrojový kód aplikácie je dostupný na <a href='https://github.com/maarioz/Numbermat-WebApp' target='_blank'> GitHube</a>." +
   " Nahlásiť akýkoľvek bug môže užívateľ na <a href='https://github.com/maarioz/Numbermat-WebApp/issues' target='_blank'> GitHub Issues</a> alebo kliknutím na tlačidlo Issue v ľavom dolnom rohu tejto nápovedy.<br><br>",
 
