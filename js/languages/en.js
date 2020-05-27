@@ -232,7 +232,7 @@ en = {
   about_text:
   "This application is the result of bachelor's thesis at the Faculty of Informatics, Masaryk University in Brno. Its purpose is to generate math problems from number theory and algebra. " +
   "The web application is based on the original <a href='https://github.com/svabensky/numbermat' target='_blank'> Java application Numbermat</a>, the foundations of which were laid by <a href='https://www.fi.muni.cz/~xsvabens/index-en.html' target='_blank'> Valdemar Švábenský</a> in his bachelor's thesis in 2014.<br><br>" + 
-  "The user can choose from 13 types of math problems. The user can choose from 3 difficulties for each type of problem, or set custom parameters. The application provides help in a form of description of each problem and mathematical definitions. The application can also export assignments and solutions to PDF files. The application supports 3 languages - Slovak, Czech and English." +
+  "The user can choose from 13 types of math problems. The user can choose from 3 difficulties for each type of problem, or set custom parameters. The application provides help in a form of description of each problem and mathematical definitions. The application can also export assignments and solutions to PDF files. The application supports 3 languages - slovak, czech and english." +
   "<br><br>The source code can be found at <a href='https://github.com/maarioz/Numbermat-WebApp' target='_blank'> GitHub</a>." +
   " The user can report any bug at <a href='https://github.com/maarioz/Numbermat-WebApp/issues' target='_blank'> GitHub Issues</a> or by clicking the Issue button in the bottom left of this help modal.<br><br>",
 
