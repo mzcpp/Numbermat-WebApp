@@ -1,6 +1,6 @@
 ## Numbermat - Web application
 
-This web application is the result of my bachelor's thesis at the Faculty of Informatics, Masaryk University in Brno. Its purpose is to generate math problems from number theory and algebra. This application is based on the original application written in Java which can be found at: https://github.com/svabensky/numbermat.
+This web application is the result of my bachelor's thesis at the Faculty of Informatics, Masaryk University in Brno. Its purpose is to generate math problems from number theory and algebra. This web application is based on the [original Java application Numbermat](https://github.com/svabensky/numbermat), the foundations of which were laid by [Valdemar Švábenský](https://www.fi.muni.cz/~xsvabens/index-en.html) in his bachelor's thesis in 2014.
 
 ## Usage Guide
 
