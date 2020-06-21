@@ -174,7 +174,7 @@ cz = {
 
     "Eulerova funkce φ pro přirozené číslo <i>m</i> udává počet přirozených čísel nesoudělných s <i>m</i> a nepřevyšujících <i>m</i>.<br>" +
     "Jestli je <i>p</i> prvočíslo a <i>n</i> ≥ 1, pak platí φ(<i>p</i>^<i>n</i>) = (<i>p</i> - 1) * <i>p</i> ^ (<i>n</i> - 1)<br>" +
-    "Pro (<i>m</i>, <i>n</i>) = 1 platí φ(<i>m</i>, <i>n</i>) = φ(<i>m</i>) * φ(<i>n</i>)",
+    "Pro (<i>m</i>, <i>n</i>) = 1 platí φ(<i>m</i> * <i>n</i>) = φ(<i>m</i>) * φ(<i>n</i>)",
 
     "Nechť <i>a</i> je celé číslo, <i>m</i> přirozené číslo a zároveň (<i>a</i>, <i>m</i>) = 1. Potom platí <i>a</i>^φ(m) ≡ 1 (mod <i>m</i>) kde φ je Eulerova funkce.",
 
