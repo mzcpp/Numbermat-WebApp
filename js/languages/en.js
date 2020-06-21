@@ -174,7 +174,7 @@ en = {
 
     "Euler function φ for natural number <i>m</i> gives the number of natural numbers that are co-prime with <i>m</i>, not exceeding <i>m</i>.<br>" +
     "If <i>p</i> is a prime number and <i>n</i> ≥ 1, then φ(<i>p</i>^<i>n</i>) = (<i>p</i> - 1) * <i>p</i> ^ (<i>n</i> - 1) holds.<br>" +
-    "For (<i>m</i>, <i>n</i>) = 1, the property φ(<i>m</i>, <i>n</i>) = φ(<i>m</i>) * φ(<i>n</i>) holds.",
+    "For (<i>m</i>, <i>n</i>) = 1, the property φ(<i>m</i> * <i>n</i>) = φ(<i>m</i>) * φ(<i>n</i>) holds.",
 
     "Let <i>a</i> be an integer, <i>m</i> a natural number, and the property (<i>a</i>, <i>m</i>) = 1 holds. Then <i>a</i>^φ(<i>m</i>) ≡ 1 (mod <i>m</i>) where φ is the Euler function.",
 
