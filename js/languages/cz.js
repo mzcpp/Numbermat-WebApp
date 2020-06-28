@@ -7,7 +7,7 @@
 cz = {
   title: "Numbermat: Generátor Příkladů",
 
-  difficulties: ["Lehká", "Střední", "Ťěžká"],
+  difficulties: ["Lehká", "Střední", "Těžká"],
 
   exercises: [
     "Největší společný dělitel",
