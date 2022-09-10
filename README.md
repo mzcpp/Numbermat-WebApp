@@ -1,6 +1,6 @@
 ## Numbermat - Web application
 
-The purpose of this web application is to generate math problems from number theory and algebra. This web application is based on the [original Java application Numbermat](https://github.com/svabensky/numbermat), the foundations of which were laid by [Valdemar Švábenský](https://www.fi.muni.cz/~xsvabens/index-en.html) in his bachelor's thesis in 2014.
+The purpose of this web application is to generate math problems from number theory and algebra. This web application is based on the [original Java application Numbermat](https://github.com/svabensky/numbermat), the foundations of which were laid by [Valdemar Švábenský](https://elea.sk/valdemar/) in his bachelor's thesis in 2014.
 
 ## Usage Guide
 
