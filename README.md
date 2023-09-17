@@ -6,7 +6,7 @@ The purpose of this web application is to generate math problems from number the
 
 The user can choose from 13 types of math problems. The user can choose from 3 difficulties for each type of problem, or set custom parameters. The application provides a help in the form of description of each problem and mathematical definitions. The application can also export problems and their solutions to files in PDF format. The application supports 3 languages - Slovak, Czech and English. Please report any bugs in the issues.
 
-To use this application, you can access it via [GitHub Pages](https://xnaaru.github.io/Numbermat-WebApp/#en) or you can download the ZIP of this repository, and open the index.html file in your internet browser.
+To use this application, you can access it via [GitHub Pages](https://xmaario.github.io/Numbermat-WebApp/#en) or you can download the ZIP of this repository, and open the index.html file in your internet browser.
 
 Recommended browser versions (or newer): 
 
